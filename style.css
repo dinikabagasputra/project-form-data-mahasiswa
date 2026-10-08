@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #eef1ff,
+        #ffffff
+    );
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+
+    color: #222;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    border-top: 6px solid #293A8F;
+
+    box-shadow:
+        0 10px 30px rgba(41, 58, 143, 0.15);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    border-bottom: 2px solid #D4A62A;
+
+    padding-bottom: 20px;
+}
+
+
+.header h1 {
+    color: #293A8F;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #293A8F;
+}
+
+
+.form-group label span {
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #c9cde0;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    background: #fafbff;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #293A8F;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(41, 58, 143, 0.12);
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   RADIO & CHECKBOX
+========================= */
+
+.radio-group,
+.checkbox-group {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.option {
+
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 7px;
+
+    background: #f2f4ff;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: normal !important;
+
+    color: #333 !important;
+
+    transition: 0.2s;
+}
+
+
+.option:hover {
+    background: #fff4d6;
+}
+
+
+.option input {
+    accent-color: #ED1C2E;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON SIMPAN
+========================= */
+
+.btn-submit {
+
+    background: #293A8F;
+
+    color: white;
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-submit:hover {
+
+    background: #1D2B6F;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(41, 58, 143, 0.25);
+}
+
+
+/* =========================
+   BUTTON RESET
+========================= */
+
+.btn-reset {
+
+    background: #ED1C2E;
+
+    color: white;
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-reset:hover {
+
+    background: #c91424;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HASIL DATA
+========================= */
+
+.result-container {
+    max-width: 850px;
+}
+
+
+.success-header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    border-bottom: 2px solid #D4A62A;
+
+    padding-bottom: 20px;
+}
+
+
+.success-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #293A8F;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 15px rgba(41, 58, 143, 0.2);
+}
+
+
+.success-header h1 {
+
+    color: #293A8F;
+
+    margin-bottom: 8px;
+}
+
+
+.success-header p {
+    color: #666;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 10px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+table th,
+table td {
+
+    padding: 15px;
+
+    border: 1px solid #e0e2ec;
+
+    text-align: left;
+
+    vertical-align: top;
+}
+
+
+table th {
+
+    width: 30%;
+
+    background: #293A8F;
+
+    color: white;
+}
+
+
+table td {
+
+    background: #fafbff;
+
+    color: #333;
+}
+
+
+table tr:nth-child(even) td {
+
+    background: #f3f5ff;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-box {
+
+    background: #fff0f1;
+
+    border: 1px solid #ED1C2E;
+
+    color: #b51220;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.error-box h3 {
+    margin-bottom: 10px;
+}
+
+
+.error-box ul {
+    padding-left: 20px;
+}
+
+
+.error-box li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   BUTTON KEMBALI
+========================= */
+
+.button-area {
+
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+
+.btn-back {
+
+    background: #293A8F;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    transition: 0.3s;
+}
+
+
+.btn-back:hover {
+
+    background: #1D2B6F;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+    .option {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        padding: 11px;
+
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   HEADER + LOGO KAMPUS
+========================= */
+
+.header {
+    text-align: left;
+
+    margin-bottom: 30px;
+
+    border-bottom: 2px solid #D4A62A;
+
+    padding-bottom: 20px;
+}
+
+
+.header-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.logo-header {
+    width: 85px;
+
+    height: 85px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+.header-text {
+    flex: 1;
+}
+
+
+.header-text h1 {
+    color: #293A8F;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.header-text p {
+    color: #666;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+/* =========================
+   COPYRIGHT DI DALAM FORM
+========================= */
+
+.copyright {
+    text-align: center;
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e2e8f0;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.copyright strong {
+    color: #293A8F;
+
+    font-weight: bold;
+}

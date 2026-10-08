@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Mhs By Dinika</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+    <div class="header-content">
+
+        <img 
+            src="udb.png.png" 
+            alt="Logo Kampus"
+            class="logo-header"
+        >
+
+        <div class="header-text">
+
+            <h1>Form Data Mahasiswa</h1>
+
+            <p>
+                lengkapi data mahasiswa di bawah ini dengan benar
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <!-- FORM -->
+
+        <form 
+            action="proses.php" 
+            method="POST"
+            id="formMahasiswa"
+        >
+
+            <!-- NIM -->
+            <div class="form-group">
+
+                <label for="nim">
+                    NIM
+                </label>
+
+                <input 
+                    type="text" 
+                    id="nim" 
+                    name="nim"
+                    placeholder="Contoh : 250103038"
+                    maxlength="12"
+                    required
+                >
+
+            </div>
+
+
+            <!-- NAMA -->
+            <div class="form-group">
+
+                <label for="nama">
+                    Nama Lengkap
+                </label>
+
+                <input 
+                    type="text" 
+                    id="nama" 
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="contohdinika@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PROGRAM STUDI -->
+            <div class="form-group">
+
+                <label for="prodi">
+                    Program Studi
+                </label>
+
+                <select 
+                    id="prodi" 
+                    name="prodi"
+                    required
+                >
+
+                    <option value="">
+                        -- Pilih Program Studi --
+                    </option>
+
+                    <option value="Teknik Informatika">
+                        Teknik Informatika
+                    </option>
+
+                    <option value="Sistem Informasi">
+                        Sistem Informasi
+                    </option>
+
+                    <option value="Teknik Komputer">
+                        Teknik Komputer
+                    </option>
+
+                    <option value="Rekayasa Perangkat Lunak">
+                        Rekayasa Perangkat Lunak
+                    </option>
+
+                    <option value="Akuntansi">
+                        Akuntansi
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- JENIS KELAMIN -->
+            <div class="form-group">
+
+                <label>
+                    Jenis Kelamin
+                </label>
+
+                <div class="radio-group">
+
+                    <label class="option">
+
+                        <input 
+                            type="radio" 
+                            name="jenis_kelamin" 
+                            value="Laki-laki"
+                        >
+
+                        Laki-laki
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input 
+                            type="radio" 
+                            name="jenis_kelamin" 
+                            value="Perempuan"
+                        >
+
+                        Perempuan
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOBI -->
+            <div class="form-group">
+
+                <label>
+                    Hobi 
+                    <span>(pilih minimal 2)</span>
+                </label>
+
+                <div class="checkbox-group">
+
+                    <label class="option">
+
+                        <input 
+                            type="checkbox" 
+                            name="hobi[]" 
+                            value="Membaca"
+                        >
+
+                        Membaca
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input 
+                            type="checkbox" 
+                            name="hobi[]" 
+                            value="Olahraga"
+                        >
+
+                        Olahraga
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input 
+                            type="checkbox" 
+                            name="hobi[]" 
+                            value="Musik"
+                        >
+
+                        Musik
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input 
+                            type="checkbox" 
+                            name="hobi[]" 
+                            value="Gaming"
+                        >
+
+                        Gaming
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input 
+                            type="checkbox" 
+                            name="hobi[]" 
+                            value="Fotografi"
+                        >
+
+                        Fotografi
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input 
+                            type="checkbox" 
+                            name="hobi[]" 
+                            value="Traveling"
+                        >
+
+                        Traveling
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- ALAMAT -->
+            <div class="form-group">
+
+                <label for="alamat">
+                    Alamat
+                </label>
+
+                <textarea 
+                    id="alamat" 
+                    name="alamat" 
+                    rows="4"
+                    placeholder="Masukkan alamat lengkap"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- TOMBOL -->
+
+            <button 
+                type="submit" 
+                class="btn-submit"
+            >
+                Simpan Data
+            </button>
+
+
+            <button 
+                type="reset" 
+                class="btn-reset"
+            >
+                Reset
+            </button>
+
+            <footer class="copyright">
+                © 2026 Tugas Form Data Mhs — Dibuat oleh <strong>Dinika Bagas</strong>
+            </footer>
+
+        </form>
+
+    </div>
+
+
+    <!-- JAVASCRIPT VALIDASI -->
+
+    <script>
+
+        const form = document.getElementById("formMahasiswa");
+
+
+        form.addEventListener("submit", function(event) {
+
+            let errors = [];
+
+
+            // ==========================
+            // AMBIL DATA
+            // ==========================
+
+            const nim = document
+                .getElementById("nim")
+                .value
+                .trim();
+
+            const nama = document
+                .getElementById("nama")
+                .value
+                .trim();
+
+            const email = document
+                .getElementById("email")
+                .value
+                .trim();
+
+            const prodi = document
+                .getElementById("prodi")
+                .value;
+
+            const alamat = document
+                .getElementById("alamat")
+                .value
+                .trim();
+
+
+            const jenisKelamin = document.querySelector(
+                'input[name="jenis_kelamin"]:checked'
+            );
+
+
+            const hobi = document.querySelectorAll(
+                'input[name="hobi[]"]:checked'
+            );
+
+
+            // ==========================
+            // VALIDASI NIM
+            // ==========================
+
+            if (!/^\d{8,12}$/.test(nim)) {
+
+                errors.push(
+                    "NIM harus terdiri dari 8-12 digit angka."
+                );
+
+            }
+
+
+            // ==========================
+            // VALIDASI NAMA
+            // ==========================
+
+            if (nama.length < 3) {
+
+                errors.push(
+                    "Nama minimal 3 karakter."
+                );
+
+            } 
+            else if (!/^[a-zA-Z\s]+$/.test(nama)) {
+
+                errors.push(
+                    "Nama hanya boleh menggunakan huruf dan spasi."
+                );
+
+            }
+
+
+            // ==========================
+            // VALIDASI EMAIL
+            // ==========================
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                errors.push(
+                    "Format email tidak valid."
+                );
+
+            }
+
+
+            // ==========================
+            // VALIDASI PROGRAM STUDI
+            // ==========================
+
+            if (prodi === "") {
+
+                errors.push(
+                    "Program studi wajib dipilih."
+                );
+
+            }
+
+
+            // ==========================
+            // VALIDASI JENIS KELAMIN
+            // ==========================
+
+            if (!jenisKelamin) {
+
+                errors.push(
+                    "Jenis kelamin wajib dipilih."
+                );
+
+            }
+
+
+            // ==========================
+            // VALIDASI HOBI
+            // ==========================
+
+            if (hobi.length < 2) {
+
+                errors.push(
+                    "Silakan pilih minimal 2 hobi."
+                );
+
+            }
+
+
+            // ==========================
+            // VALIDASI ALAMAT
+            // ==========================
+
+            if (alamat === "") {
+
+                errors.push(
+                    "Alamat tidak boleh kosong."
+                );
+
+            }
+
+
+            // ==========================
+            // CEK HASIL VALIDASI
+            // ==========================
+
+            if (errors.length > 0) {
+
+                // MENCEGAH FORM DI-SUBMIT
+                event.preventDefault();
+
+
+                // Membuat pesan error
+                let pesan =
+                    "⚠ CATATAN VALIDASI\n\n";
+
+
+                errors.forEach(function(error, index) {
+
+                    pesan +=
+                        "• " + error + "\n";
+
+                });
+
+
+                alert(pesan);
+
+                return false;
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
